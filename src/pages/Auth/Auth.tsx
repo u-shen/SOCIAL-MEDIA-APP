@@ -1,18 +1,18 @@
 import { useEffect, useState } from "react";
 import { createUserWithEmailAndPassword, signInWithPopup } from "firebase/auth";
-import { auth, GProvider } from "../../config/firebase";
-import { useNavigate } from "react-router-dom";
 import * as yup from "yup";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
+import { auth, GProvider } from "../../config/firebase";
+import { useNavigate } from "react-router-dom";
 import "./Auth.css";
 
 export const Auth = ({ setIsAuth }) => {
-  type TUserInfo = {
+  interface TUserInfo {
     uid: string;
-    userName: string | null;
-    img: string | null;
-  };
+    userName: string;
+    img: string;
+  }
   const [userSignInInfo, setUserSignInInfo] = useState<TUserInfo>();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -21,7 +21,7 @@ export const Auth = ({ setIsAuth }) => {
     email: yup
       .string()
       .required("Email Is Required")
-      .email("Email Format is Not Valid"),
+      .email("Email Format Is Not Valid"),
     password: yup
       .string()
       .required("Password Is Required")
@@ -73,7 +73,6 @@ export const Auth = ({ setIsAuth }) => {
   useEffect(() => {
     if (window.localStorage.getItem("userSignInInfo")) {
       navigateTo("/home");
-      console.log(userSignInInfo);
     }
   }, [userSignInInfo]);
   return (
@@ -84,7 +83,9 @@ export const Auth = ({ setIsAuth }) => {
           onSubmit={handleSubmit(signInWithEmailAndPassword)}
           className="form-sign-in"
         >
-          <label htmlFor="email">Your Email</label>
+          <label className="email-label" htmlFor="email">
+            Your Email
+          </label>
           <input
             {...register("email")}
             id="email"
@@ -97,7 +98,9 @@ export const Auth = ({ setIsAuth }) => {
               {errors.email.message}
             </small>
           )}
-          <label htmlFor="password">Password</label>
+          <label className="password-label" htmlFor="password">
+            Password
+          </label>
           <input
             {...register("password")}
             id="password"

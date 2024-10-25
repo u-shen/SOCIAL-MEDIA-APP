@@ -12,6 +12,10 @@
   gap: 25px;
   cursor: default;
 }
+.user-log-out-container h4 {
+  padding: 10px;
+  font-weight: bold;
+}
 .img-setting,
 .language-setting {
   width: 35px;
