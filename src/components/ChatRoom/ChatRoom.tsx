@@ -1,16 +1,17 @@
-import {useNavigate} from 'react-router-dom'
+import { useNavigate } from "react-router-dom";
 import { useState, useContext, useRef, useEffect } from "react";
 import { ChatContext } from "../../context/ChatContext";
 import "./ChatRoom.css";
-export const ChatRoom = () => {
+export const ChatRoom = ({ setIsChatRoom }) => {
   const [roomName, setRoomName] = useState("");
   const { setChatRoom } = useContext(ChatContext);
   const inputRef = useRef<HTMLInputElement | null>(null);
-  const navigateTo = useNavigate()
+  const navigateTo = useNavigate();
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setChatRoom(roomName);
-    navigateTo("/chat")
+    navigateTo("/chat");
+    setIsChatRoom(false);
   };
   useEffect(() => {
     inputRef?.current?.focus();

@@ -1,8 +1,10 @@
 import { useEffect, useState } from "react";
 import { getDocs, collection } from "firebase/firestore";
 import { db } from "../config/firebase";
+
 export const useGetPostsFromDb = () => {
-  const [allPosts, setAllPosts] = useState();
+  type TPosts = any[];
+  const [allPosts, setAllPosts] = useState<TPosts | null>(null);
   const postsRef = collection(db, "posts");
   const getPostsFromDb = async () => {
     const data = await getDocs(postsRef);

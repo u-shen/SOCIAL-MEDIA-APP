@@ -9,7 +9,7 @@ import "./Auth.css";
 
 export const Auth = ({ setIsAuth }) => {
   type TUserInfo = {
-    userID: string;
+    uid: string;
     userName: string | null;
     img: string | null;
   };
@@ -58,7 +58,7 @@ export const Auth = ({ setIsAuth }) => {
         password,
       );
       const filtredUserData = {
-        userID: userData.user.uid,
+        uid: userData.user.uid,
         userName: userData.user.email,
         img: `https://avatar.iran.liara.run/username?username=[${auth.currentUser?.email}]`,
       };

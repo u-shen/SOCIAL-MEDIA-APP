@@ -28,7 +28,7 @@ export const Navbar = ({
           >
             <Chat className="icon" size={32} />
           </button>
-          {isChatRoom && <ChatRoom />}
+          {isChatRoom && <ChatRoom setIsChatRoom={setIsChatRoom} />}
           <button
             onClick={() => {
               setIsChatRoom(false);

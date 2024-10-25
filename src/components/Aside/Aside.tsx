@@ -8,7 +8,7 @@ import { ChatContext } from "../../context/ChatContext";
 import { useNavigate } from "react-router-dom";
 export const Aside = () => {
   const [existRoom, setExistRoom] = useState<string[] | null>(null);
-  const { setChatRoom } = useContext(ChatContext);
+  const { setChatRoom, chatRoom } = useContext(ChatContext);
   const navigateTo = useNavigate();
   const msgRef = collection(db, "messages");
   const getSnapShot = async () => {
@@ -27,8 +27,7 @@ export const Aside = () => {
     <>
       <div className="aside-container">
         <div className="aside-title">
-          <h4>ushen</h4>
-          <span></span>
+          <h4>ROOMS : </h4>
         </div>
         <div className="aside-links">
           <nav>
@@ -41,6 +40,7 @@ export const Aside = () => {
                       name="chat-room"
                       id={item}
                       type="radio"
+                      checked={chatRoom === item}
                       value={item}
                       onChange={(e) => {
                         setChatRoom(e.target.value);
