@@ -1,0 +1,33 @@
+/* #1877f2 */
+.chat-room-container {
+  position: absolute;
+  width: 250px;
+  padding: 20px 15px;
+  background-color: #fff;
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.4);
+  left: -200px;
+  top: 50px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  cursor: default;
+}
+.form-room {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.chat-room-input,
+.chat-room-btn {
+  border-radius: 8px;
+  border: none;
+  padding: 10px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
+}
+.chat-room-btn {
+  background-color: #1877f2;
+  font-weight: 800;
+  cursor: pointer;
+}

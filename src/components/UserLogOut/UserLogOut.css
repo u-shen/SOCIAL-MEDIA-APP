@@ -1,0 +1,32 @@
+.user-log-out-container {
+  position: absolute;
+  width: 250px;
+  padding: 20px 15px;
+  background-color: #fff;
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.4);
+  left: -200px;
+  top: 50px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  cursor: default;
+}
+.img-setting,
+.language-setting {
+  width: 35px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.language-setting {
+  padding: 20px 0;
+  width: auto;
+}
+.logOut-setting {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}

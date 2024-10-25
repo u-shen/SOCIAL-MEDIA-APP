@@ -1,0 +1,55 @@
+.container-social-media {
+  background-color: #1877f2;
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.8);
+  padding: 20px;
+}
+.social-meida-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.search-input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+.search-icon {
+  font-weight: bold;
+  left: 25px;
+  position: relative;
+  color: #000;
+}
+input[type="search"] {
+  display: block;
+  width: 80%;
+  padding: 10px 30px;
+  border-radius: 8px;
+  border: none;
+  background-color: #e5e7eb;
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.4);
+}
+input[type="search"]:focus {
+  outline: none;
+}
+.social-media-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  position: relative;
+}
+.chat-room,
+.user-settings {
+  padding: 2px 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: 2px solid #1877f2;
+  background-color: #e5e7eb;
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.4);
+  position: relative;
+}
+.icon {
+  font-weight: 900;
+}
