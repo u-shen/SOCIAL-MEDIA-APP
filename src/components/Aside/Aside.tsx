@@ -26,9 +26,9 @@ export const Aside = () => {
   return (
     <>
       <div className="aside-container">
-        <div className="aside-title">
-          <h4>ROOMS : </h4>
-        </div>
+        {/* <div className="aside-title"> */}
+        {/*   <h4>ROOMS : </h4> */}
+        {/* </div> */}
         <div className="aside-links">
           <nav>
             <ul>

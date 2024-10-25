@@ -1,8 +1,10 @@
 import { MagnifyingGlass, Chat, UserCircleGear } from "@phosphor-icons/react";
 import { UserLogOut } from "../UserLogOut/UserLogOut";
 import { ChatRoom } from "../ChatRoom/ChatRoom";
+import LOGO from "../../assets/CHAT.png";
 import "./Navbar.css";
 import { useState } from "react";
+import { NavLink } from "react-router-dom";
 export const Navbar = ({
   setIsAuth,
 }: {
@@ -13,9 +15,17 @@ export const Navbar = ({
   return (
     <div className="container-social-media">
       <header className="social-meida-header">
-        <div className="social-media-logo">Social Icon</div>
+        <NavLink to="/home">
+          <div className="social-media-logo">
+            <img className="navbar-logo" src={LOGO} alt="" />
+          </div>
+        </NavLink>
         <div className="search-input">
-          <MagnifyingGlass className="search-icon icon" size={16} />
+          <MagnifyingGlass
+            color="#1877f2"
+            className="search-icon icon"
+            size={16}
+          />
           <input type="search" placeholder="Search For A Post" />
         </div>
         <div className="social-media-info">
@@ -26,9 +36,10 @@ export const Navbar = ({
             }}
             className="chat-room"
           >
-            <Chat className="icon" size={32} />
+            <Chat className="icon" color="#1877f2" size={32} />
           </button>
           {isChatRoom && <ChatRoom setIsChatRoom={setIsChatRoom} />}
+
           <button
             onClick={() => {
               setIsChatRoom(false);
@@ -36,7 +47,7 @@ export const Navbar = ({
             }}
             className="user-settings"
           >
-            <UserCircleGear size={32} />
+            <UserCircleGear color="#1877f2" size={32} />
             {userSettings && <UserLogOut setIsAuth={setIsAuth} />}
           </button>
         </div>

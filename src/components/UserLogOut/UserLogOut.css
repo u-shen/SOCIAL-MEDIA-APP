@@ -30,3 +30,14 @@
   gap: 10px;
   cursor: pointer;
 }
+@media only screen and (max-width: 767px) {
+  .user-log-out-container {
+    width: 200px;
+    padding: 10px 10px;
+    left: -150px;
+  }
+
+  .language-setting {
+    padding: 10px 0;
+  }
+}

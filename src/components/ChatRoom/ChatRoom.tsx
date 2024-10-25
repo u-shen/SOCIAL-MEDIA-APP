@@ -1,6 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import { useState, useContext, useRef, useEffect } from "react";
 import { ChatContext } from "../../context/ChatContext";
+import { ChatCenteredDots } from "@phosphor-icons/react";
 import "./ChatRoom.css";
 export const ChatRoom = ({ setIsChatRoom }) => {
   const [roomName, setRoomName] = useState("");
@@ -28,6 +29,9 @@ export const ChatRoom = ({ setIsChatRoom }) => {
           ref={inputRef}
         />
         <button className="chat-room-btn" type="submit">
+          <label>
+            <ChatCenteredDots size={25} />
+          </label>
           Enter Room
         </button>
       </form>
