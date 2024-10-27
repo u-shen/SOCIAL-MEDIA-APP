@@ -7,6 +7,7 @@
 .btn-like {
   border-radius: 8px;
   border: none;
+  background-color: #1877f2;
 }
 .btn-like svg {
   border: none;
@@ -20,6 +21,10 @@
   animation-duration: 0.5s;
   animation-timing-function: linear;
   animation-direction: alternate;
+}
+.likes-number {
+  color: #888;
+  font-size: smaller;
 }
 .label-like {
   padding: 0;

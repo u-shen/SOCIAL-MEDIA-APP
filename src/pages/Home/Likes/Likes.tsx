@@ -49,13 +49,15 @@ export const Likes = ({ postId }) => {
       <button className="btn-like" onClick={hasLiked ? deleteLikes : addLikes}>
         <label className="label-like">
           {hasLiked ? (
-            <ThumbsDown size={30} color="#1877f2" weight="bold" />
+            <ThumbsDown size={30} color="#f1f5f9" weight="bold" />
           ) : (
-            <ThumbsUp size={30} color="#1877f2" weight="bold" />
+            <ThumbsUp size={30} color="#f1f5f9" weight="bold" />
           )}
         </label>
       </button>
-      <p>{likesUserId?.length}</p>
+      {likesUserId?.length > 0 && (
+        <p className="likes-number">{likesUserId?.length} Likes</p>
+      )}
     </div>
   );
 };

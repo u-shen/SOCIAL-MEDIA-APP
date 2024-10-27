@@ -4,7 +4,7 @@ import "./App.css";
 import { Auth } from "./pages/Auth/Auth";
 import { Layout } from "./pages/Layout/Layout";
 import { Home } from "./pages/Home/Home";
-import {Chat} from './pages/Chat/Chat'
+import { Chat } from "./pages/Chat/Chat";
 import { ChatContextProvider } from "../src/context/ChatContext";
 
 function App() {
@@ -26,7 +26,7 @@ function App() {
         },
         {
           path: "/chat",
-          element:<Chat />
+          element: <Chat />,
         },
       ],
     },
