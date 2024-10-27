@@ -1,0 +1,35 @@
+.likes-container {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  font-weight: bolder;
+}
+.btn-like {
+  border-radius: 8px;
+  border: none;
+}
+.btn-like svg {
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.btn-like:focus svg {
+  animation-name: likes;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+}
+.label-like {
+  padding: 0;
+}
+
+@keyframes likes {
+  from {
+    width: auto;
+  }
+  to {
+    width: 30px;
+  }
+}

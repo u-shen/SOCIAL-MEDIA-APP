@@ -50,7 +50,7 @@ export const Aside = () => {
                       }}
                     />
                     <span className="custom-radio"></span>
-                    <label htmlFor={item}>
+                    <label className="radio-label" htmlFor={item}>
                       <ChatCenteredDots size={25} />
                       <div className="item">{item}</div>
                     </label>

@@ -12,6 +12,7 @@ import { useGetUserLoginInfo } from "../../hooks/useGetUserLoginInfo";
 import { auth, db } from "../../config/firebase";
 import { Aside } from "../../components/Aside/Aside";
 import "./Home.css";
+import { Likes } from "./Likes/Likes";
 export const Home = () => {
   const [newPost, setNewPost] = useState("");
   const { allPosts, getPostsFromDb } = useGetPostsFromDb();
@@ -49,7 +50,7 @@ export const Home = () => {
         <section className="add-post">
           <div className="new-posts-container">
             <div className="img-container">
-              <img className="img-sign-in" src={img} alt="Img Sign In User" />
+              <img className="img-sign-in" src={img} />
             </div>
             <textarea
               className="new-post-input"
@@ -92,6 +93,7 @@ export const Home = () => {
                   <div className="post-text">
                     <p>{post.post}</p>
                   </div>
+                  <Likes userId={post.uid} postId={post.id} />
                 </div>
               </>
             );

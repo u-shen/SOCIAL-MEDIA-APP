@@ -38,19 +38,19 @@ input[type="radio"] {
   display: none;
 }
 
-input[type="radio"]:checked ~ label {
+input[type="radio"]:checked ~ label.radio-label {
   background-color: #eff3f7;
   border-radius: 8px;
   color: #1877f2;
 }
 label {
   display: flex;
-  padding: 20px;
+  padding: 10px;
   align-items: center;
   gap: 20px;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 767px) {
   .aside-title {
     display: none;
   }
@@ -58,7 +58,7 @@ label {
     display: none;
   }
 
-  label {
+  label.radio-label {
     display: flex;
     padding: 10px;
     align-items: start;
