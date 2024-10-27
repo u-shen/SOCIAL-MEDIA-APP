@@ -41,6 +41,9 @@
     left: -150px;
   }
 
+  .img-setting {
+    width: 20px;
+  }
   .language-setting {
     padding: 10px 0;
   }

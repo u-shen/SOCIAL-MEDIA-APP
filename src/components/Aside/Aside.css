@@ -1,8 +1,13 @@
 .aside-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   box-shadow: 1px 1px 4px 4px rgba(#000, 0.8);
   background-color: #1877f2;
-  min-height: 93vh;
-  padding: 30px 10px;
+  border-radius: 20px;
+  min-height: 91dvh;
+  border: 8px solid #fff;
+  text-align: center;
 }
 
 .aside-title h4 {
@@ -18,24 +23,16 @@
 }
 
 .aside-links {
-  margin: 40px 0;
   font-weight: bolder;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 50px 0;
   color: #fff;
-  background-color: #1877f2;
-  /* box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2); */
   border-radius: 8px;
   height: 90%;
 }
 .item {
   text-transform: uppercase;
-}
-li {
-  display: flex;
-  gap: 10px;
 }
 input[type="radio"] {
   display: none;
@@ -69,11 +66,16 @@ label {
     align-items: start;
     justify-content: start;
     gap: 20px;
+    border-radius: 50%;
+  }
+
+  input[type="radio"]:checked ~ label.radio-label {
+    border-radius: 50%;
   }
   .aside-links {
-    justify-content: end;
+    justify-content: center;
   }
   label {
-    padding: 4px;
+    padding: 1px;
   }
 }

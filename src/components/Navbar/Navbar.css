@@ -3,6 +3,8 @@
   background-color: #1877f2;
   box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.8);
   padding: 20px;
+  border-bottom: 2px solid #e5e7eb;
+  box-shadow: 1px 1px 4px 0px #e5e7eb;
 }
 .social-meida-header {
   display: flex;
@@ -42,7 +44,7 @@ a {
   position: relative;
   color: #000;
 }
-input[type="search"] {
+input[type="text"].navbar-search {
   display: block;
   width: 80%;
   padding: 10px 30px;
@@ -51,7 +53,7 @@ input[type="search"] {
   background-color: #e5e7eb;
   box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.4);
 }
-input[type="search"]:focus {
+input[type="text"].navbar-search:focus {
   outline: none;
 }
 .social-media-info {

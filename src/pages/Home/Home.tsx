@@ -6,7 +6,13 @@ import {
   collection,
   serverTimestamp,
 } from "firebase/firestore";
-import { TrashSimple } from "@phosphor-icons/react";
+import {
+  Images,
+  Smiley,
+  MapPin,
+  Tag,
+  TrashSimple,
+} from "@phosphor-icons/react";
 import { useGetPostsFromDb } from "../../hooks/useGetPostsFromDb";
 import { useGetUserLoginInfo } from "../../hooks/useGetUserLoginInfo";
 import { auth, db } from "../../config/firebase";
@@ -61,6 +67,24 @@ export const Home = () => {
           </div>
           <span className="line"></span>
           <div className="share">
+            <div className="share-icons">
+              <div className="image">
+                <Images color="#1877f2" size={25} />
+                <small>Photo Or Vedio</small>
+              </div>
+              <div className="tag">
+                <Tag color="#1877f2" size={25} />
+                <small>Tag</small>
+              </div>
+              <div className="Location">
+                <MapPin color="#1877f2" size={25} />
+                <small>Location</small>
+              </div>
+              <div className="Location">
+                <Smiley color="#1877f2" size={25} />
+                <small>Feelings</small>
+              </div>
+            </div>
             <button onClick={addNewPost} className="share-btn">
               Share
             </button>

@@ -27,7 +27,11 @@ export const Navbar = ({
             className="search-icon icon"
             size={16}
           />
-          <input type="search" placeholder="Search For A Post" />
+          <input
+            type="text"
+            className="navbar-search"
+            placeholder="Search For A Post"
+          />
         </div>
         <div className="social-media-info">
           <button

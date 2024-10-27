@@ -54,14 +54,14 @@ export const Chat = () => {
     <div className="grid-container">
       <Aside />
       <div className="whole-messages">
-        <div className="chat-room-title">
-          <h4>
-            <label>
-              <Chats size={32} />
-            </label>
-            <p>WELCOME IN {chatRoom.toUpperCase()}</p>
-          </h4>
-        </div>
+        {/* <div className="chat-room-title"> */}
+        {/*   <h4> */}
+        {/*     <label> */}
+        {/*       <Chats size={32} /> */}
+        {/*     </label> */}
+        {/*     <p>WELCOME IN {chatRoom.toUpperCase()}</p> */}
+        {/*   </h4> */}
+        {/* </div> */}
         <div className="messages-container">
           {messages?.map((message) => {
             return (
@@ -87,7 +87,7 @@ export const Chat = () => {
               className="textarea-msg"
               value={newMsg}
               onChange={(e) => setNewMsg(e.target.value)}
-              placeholder="Say something"
+              placeholder="Say something..."
             ></textarea>
             <button onClick={addMsg} type="submit" className="send">
               <PaperPlane size={32} />

@@ -33,12 +33,12 @@ export const UserLogOut = ({
           <p>{userName}</p>
         </div>
         <div className="language-setting">
-          <GlobeHemisphereEast color="#1877f2" size={35} />
+          <GlobeHemisphereEast color="#1877f2" size={40} />
           AR
         </div>
         <span className="line"></span>
         <div onClick={userSignOut} className="logOut-setting">
-          <SignOut color="#1877f2" size={35} />
+          <SignOut color="#1877f2" size={40} />
           <p>Log Out</p>
         </div>
       </div>
