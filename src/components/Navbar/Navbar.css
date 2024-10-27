@@ -82,6 +82,7 @@ input[type="search"]:focus {
     margin-left: 0px;
   }
   .logo-name {
+    display: none;
     font-size: 12px;
   }
   .navbar-logo {
