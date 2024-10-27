@@ -46,7 +46,7 @@ export const Home = () => {
   return (
     <div className="grid-container">
       <Aside />
-      <div className="post-container">
+      <div className="post-container-all">
         <section className="add-post">
           <div className="new-posts-container">
             <div className="img-container">

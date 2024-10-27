@@ -54,6 +54,9 @@ label {
 }
 
 @media only screen and (max-width: 767px) {
+  .aside-container {
+    max-width: 40px;
+  }
   .aside-title {
     display: none;
   }
@@ -63,13 +66,14 @@ label {
 
   label.radio-label {
     display: flex;
-    padding: 10px;
     align-items: start;
     justify-content: start;
     gap: 20px;
   }
   .aside-links {
-    padding: 8px;
     justify-content: end;
+  }
+  label {
+    padding: 4px;
   }
 }

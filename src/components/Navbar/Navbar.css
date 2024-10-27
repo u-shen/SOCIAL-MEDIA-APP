@@ -78,4 +78,13 @@ input[type="search"]:focus {
   .social-meida-header {
     max-height: 30px;
   }
+  .social-meida-header {
+    margin-left: -10px;
+  }
+  .logo-name {
+    font-size: 12px;
+  }
+  .navbar-logo {
+    width: 35px;
+  }
 }
