@@ -10,6 +10,8 @@
 }
 .new-posts-container {
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-grow: 1;
 }
 .new-post-input {
@@ -26,7 +28,7 @@
 .img-sign-in {
   border-radius: 50%;
   max-width: 100%;
-  width: 80px;
+  width: 50px !important;
 }
 .line {
   display: block;
@@ -89,14 +91,20 @@
   padding: 10px;
 }
 @media (max-width: 767px) {
+  ::placeholder {
+    font-size: 12px;
+  }
   .line {
     margin: 5px auto;
   }
   .post-container {
-    padding: 5px;
+    padding: 15px;
   }
   .post-container-all {
     all: unset;
+    font-size: 12px;
+    line-height: 1.6;
+    margin: 0 10px;
   }
 
   .view-posts {

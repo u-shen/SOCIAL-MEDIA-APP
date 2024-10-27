@@ -79,7 +79,7 @@ input[type="search"]:focus {
     max-height: 30px;
   }
   .social-meida-header {
-    margin-left: -10px;
+    margin-left: 0px;
   }
   .logo-name {
     font-size: 12px;
