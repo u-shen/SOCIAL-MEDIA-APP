@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap");
 .container-social-media {
   background-color: #1877f2;
   box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.8);
@@ -8,21 +9,32 @@
   align-items: center;
   gap: 10px;
   max-height: 30px;
-}
-.social-media-logo {
   display: flex;
-  justify-content: center;
   align-items: center;
-  margin-left: 50px;
+  margin-left: 20px;
+}
+a {
+  text-decoration: none;
 }
 .navbar-logo {
-  width: 80px;
+  width: 50px;
+}
+
+.logo-name {
+  color: #e5e7eb;
+  font-family: "Playwrite GB S", cursive;
+  font-weight: bold;
 }
 .search-input {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-grow: 1;
+  flex-grow: 5;
+}
+.social-media-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .search-icon {
   font-weight: bold;

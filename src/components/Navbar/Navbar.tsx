@@ -18,6 +18,7 @@ export const Navbar = ({
         <NavLink to="/home">
           <div className="social-media-logo">
             <img className="navbar-logo" src={LOGO} alt="" />
+            <label className="logo-name">USHCHAT</label>
           </div>
         </NavLink>
         <div className="search-input">
