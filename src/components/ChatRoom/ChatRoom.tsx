@@ -10,7 +10,7 @@ export const ChatRoom = ({ setIsChatRoom }) => {
   const navigateTo = useNavigate();
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    setChatRoom(roomName);
+    setChatRoom(roomName.toLowerCase());
     navigateTo("/chat");
     setIsChatRoom(false);
   };
