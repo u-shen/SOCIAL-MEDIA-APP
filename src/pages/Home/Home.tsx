@@ -93,7 +93,7 @@ export const Home = () => {
                   <div className="post-text">
                     <p>{post.post}</p>
                   </div>
-                  <Likes userId={post.uid} postId={post.id} />
+                  <Likes postId={post.id} />
                 </div>
               </>
             );

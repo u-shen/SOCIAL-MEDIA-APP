@@ -28,7 +28,6 @@ export const Likes = ({ postId }) => {
     }
   };
   const deleteLikes = async () => {
-    const likeRef = collection(db, "likes");
     const queryLiked = query(
       likesRef,
       where("uid", "==", uid),
