@@ -26,7 +26,7 @@ export const UserLogOut = ({
 
   return (
     <div className="user-log-out-container">
-      <h4>User settings</h4>
+      <h4>Settings</h4>
       <div className="settings">
         <div className="img-setting">
           <img src={img} className="img-setting" />

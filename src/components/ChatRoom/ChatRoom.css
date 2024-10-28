@@ -37,8 +37,12 @@
 }
 @media only screen and (max-width: 767px) {
   .chat-room-container {
+    font-size: 12px;
     width: 200px;
     left: -100px;
     text-align: center;
+  }
+  .chat-room-container h4 {
+    font-weight: bolder;
   }
 }
