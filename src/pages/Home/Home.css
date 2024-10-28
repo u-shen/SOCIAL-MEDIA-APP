@@ -46,8 +46,12 @@
   padding-left: 10px;
 }
 .share-btn {
+  font-family: "Playwrite GB S", cursive;
+  font-size: 12px;
   cursor: pointer;
   background-color: #1877f2;
+  color: #fff;
+  font-weight: bolder;
   padding: 10px 20px;
   border: none;
   border-radius: 8px;
