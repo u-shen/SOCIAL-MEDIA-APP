@@ -1,5 +1,5 @@
 import { useState, useContext, useEffect } from "react";
-import { PaperPlane, Chats } from "@phosphor-icons/react";
+import { PaperPlane } from "@phosphor-icons/react";
 import { db } from "../../config/firebase";
 import { useGetUserLoginInfo } from "../../hooks/useGetUserLoginInfo";
 import { Aside } from "../../components/Aside/Aside";
