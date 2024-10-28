@@ -31,7 +31,7 @@ export const Home = () => {
         img: img,
         username: userName,
         createdAt: serverTimestamp(),
-        date: `${new Date().getFullYear()}/${new Date().getMonth() + 1}/${new Date().getDate()}}`,
+        date: `${new Date().getFullYear()}/${new Date().getMonth() + 1}/${new Date().getDate()}`,
         post: newPost,
       });
       setNewPost("");
@@ -110,7 +110,7 @@ export const Home = () => {
                         onClick={() => deletPost(post.id)}
                         className="delete-trash"
                       >
-                        <TrashSimple size={25} />
+                        <TrashSimple color="#1877f2" size={25} />
                       </button>
                     )}
                   </div>

@@ -5,6 +5,7 @@
   font-weight: bolder;
 }
 .btn-like {
+  padding: 10px;
   border-radius: 8px;
   border: none;
   background-color: #1877f2;
@@ -18,12 +19,13 @@
 
 .btn-like:focus svg {
   animation-name: likes;
-  animation-duration: 0.5s;
-  animation-timing-function: linear;
-  animation-direction: alternate;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+  animation-direction: revers;
 }
 .likes-number {
-  color: #888;
+  color: rgba(88, 88, 88, 0.8);
   font-size: smaller;
 }
 .label-like {
@@ -31,10 +33,11 @@
 }
 
 @keyframes likes {
-  from {
-    width: auto;
+  0%,
+  100% {
+    transform: auto;
   }
-  to {
-    width: 30px;
+  50% {
+    transform: scale(1.4);
   }
 }

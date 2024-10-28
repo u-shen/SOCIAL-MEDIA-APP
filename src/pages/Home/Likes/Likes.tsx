@@ -49,9 +49,9 @@ export const Likes = ({ postId }) => {
       <button className="btn-like" onClick={hasLiked ? deleteLikes : addLikes}>
         <label className="label-like">
           {hasLiked ? (
-            <ThumbsDown size={30} color="#f1f5f9" weight="bold" />
+            <ThumbsDown size={20} color="#f1f5f9" weight="bold" />
           ) : (
-            <ThumbsUp size={30} color="#f1f5f9" weight="bold" />
+            <ThumbsUp size={20} color="#f1f5f9" weight="bold" />
           )}
         </label>
       </button>
