@@ -14,6 +14,10 @@
   justify-content: center;
   flex-grow: 1;
 }
+.new-posts-container textarea {
+  resize: none;
+  padding: 20px;
+}
 .new-post-input {
   width: 100%;
   border: none;
