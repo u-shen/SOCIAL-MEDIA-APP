@@ -5,12 +5,12 @@ import { getFirestore } from "firebase/firestore";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyBMStseHVyRGWrRMz0Qwz_PVrC96PpkKC8",
-  authDomain: "social-media-723e5.firebaseapp.com",
-  projectId: "social-media-723e5",
-  storageBucket: "social-media-723e5.appspot.com",
-  messagingSenderId: "114430365133",
-  appId: "1:114430365133:web:e60c1612f27399f2c1c884",
+  apiKey: "AIzaSyBSU8xo-M6jSATUC2lueWNXdU7qcOrmV7E",
+  authDomain: "ush-chat.firebaseapp.com",
+  projectId: "ush-chat",
+  storageBucket: "ush-chat.firebasestorage.app",
+  messagingSenderId: "467992969559",
+  appId: "1:467992969559:web:2d0988b74adaa557413e12",
 };
 
 // Initialize Firebase
